@@ -1,0 +1,7 @@
+shortmonth =sum(map(int, str(12345678910111213141516171819202122232425262728)))
+defaultmonth =sum(map(int, str(123456789101112131415161718192021222324252627282930)))
+longmonth =sum(map(int, str(12345678910111213141516171819202122232425262728293031)))
+print("VS - visokosnii god, vse ostalnoe - default year")
+a = input()
+if(a == "VS"): print(f"Сумма всех цифр: {longmonth * 7 + defaultmonth * 4 + shortmonth + 11}")
+else: print(f"Сумма всех цифр: {longmonth * 7 + defaultmonth * 4 + shortmonth}")
